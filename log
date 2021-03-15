@@ -1,0 +1,16 @@
+Mon Mar 15 01:30:46 UTC 2021: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘suma’:
+exercises.c:15:8: error: unused variable ‘a1’ [-Werror=unused-variable]
+    int a1;
+        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+Mon Mar 15 01:32:28 UTC 2021: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+f42c11d
