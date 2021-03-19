@@ -39,12 +39,14 @@ Utilice la función sumaN.
 void sumaNultimos(int a[], int n, int m, int * suma) {
     int losPrimeros = n - m;
     int i;
+    int sumaLosPrimeros = 0;
 
     for (i = 0 ; i < losPrimeros ; i++){
-      a[i] = 0;
+      sumaLosPrimeros += a[i];
     }
 
-    *suma = sumaN(a, n);
+    *suma = sumaN(a, n) - sumaLosPrimeros;
+
 }
 
 /*
@@ -135,7 +137,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
   Vector *b = crearVector(2);
   asignarValor(b, 0, b1);
-  asignarValor(b, 1,  b2);
+  asignarValor(b, 1, b2);
 
   sumaV(a, b, c);
 }
